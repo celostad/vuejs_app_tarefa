@@ -1,26 +1,62 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <img src="./assets/cronometro.png" class="img">
+    <a class="timer">00:00,00</a>
+
+    <div class="areaBtn">
+      <button class="botao">VAI</button>
+      <button class="botao">LIMPAR</button>
+
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img {
+  width: 420px;
+  height: 420px;
+  padding-top: 100px;
+}
+
+.timer{
+  color: #fff;
+  font-size: 70px;
+  margin-top: -210px;
+}
+.areaBtn{
+  margin-top: 155px;
+  display: flex;
+}
+.botao{
+  width: 150px;
+  background-color: #fff;
+  font-size: 20px;
+  border:0;
+  border-radius: 5px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 6px;
+  cursor: pointer;
+}
+.botao:hover{
+  opacity: 0.8;
+  transition: all 0.50;
 }
 </style>
