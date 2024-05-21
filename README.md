@@ -1,4 +1,4 @@
-# crono
+# App Tarefa
 
 ## Project setup
 ```
